@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz_App"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2196F3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="QUIZ APP"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Q. Who Discovered C language?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/opt1_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Denis Ritchie"/>
+            <RadioButton
+                android:id="@+id/opt2_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Microsoft"/>
+            <RadioButton
+                android:id="@+id/opt3_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alan Turing"/>
+            <RadioButton
+                android:id="@+id/opt4_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blase Pascal"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Q. What is the extension of Java code files?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/opt1_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".js"/>
+            <RadioButton
+                android:id="@+id/opt2_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".txt"/>
+            <RadioButton
+                android:id="@+id/opt3_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".class"/>
+            <RadioButton
+                android:id="@+id/opt4_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".java"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Q. Which keyword is used to define a function in Python?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/opt1_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Function"/>
+            <RadioButton
+                android:id="@+id/opt2_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="def"/>
+            <RadioButton
+                android:id="@+id/opt3_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fun"/>
+            <RadioButton
+                android:id="@+id/opt4_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Define"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</ScrollView>
